@@ -1,7 +1,7 @@
 import React from 'react';
 import { TiHeartOutline, TiHeartFullOutline } from 'react-icons/ti';
 
-import './FeedBox.css';
+import '../../assets/stylesheets/feed/FeedBox.css';
 
 const FeedBox = props => {
     return (

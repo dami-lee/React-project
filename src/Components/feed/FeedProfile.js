@@ -1,7 +1,7 @@
 import React from 'react';
-import './Profile.css';
+import '../../assets/stylesheets/feed/FeedProfile.css';
 
-const Profile = props => {
+const FeedProfile = props => {
     return (
         <div className="profile">
             <div className="profileImage">
@@ -19,4 +19,4 @@ const Profile = props => {
     )
 }
 
-export default Profile;
+export default FeedProfile;

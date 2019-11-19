@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import faker from 'faker';
 import FeedBox from './FeedBox';
+import FeedProfile from './FeedProfile';
 
-const feedWrapper = () => {
+const FeedWrapper = () => {
     const [feeds, setFeeds] = useState([
         {
             id: 0,
@@ -32,13 +34,13 @@ const feedWrapper = () => {
         }
     ]);
 
-    renderFeedBox = feedObj => {
+    const renderFeedBox = feedObj => {
       return (
         <FeedBox
             key={feedObj.id}
             like={feedObj.like}
             likeDone={feedObj.likeDone}>
-            <Profile
+            <FeedProfile
             name={feedObj.name}
             image={feedObj.image}
             time={feedObj.time} />
@@ -48,7 +50,14 @@ const feedWrapper = () => {
     }
 
     return (
+        <div className="feedWrapper">
+            {
+                feeds.map(feedObj => (
+                    renderFeedBox(feedObj)
+                ))
+            }
+        </div>
     );
 }
 
-export default feedWrapper;
+export default FeedWrapper;
