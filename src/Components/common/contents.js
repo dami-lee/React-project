@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import feedWrapper from '../feed/feedWrapper';
+import FeedWrapper from '../feed/FeedWrapper';
 import ProfileWrapper from '../profile/profileWrapper';
 import WidgetWrapper from '../widget/widgetWrapper';
 import SignUpWrapper from '../signup/signupWrapper';
@@ -9,9 +9,9 @@ const Contents = () => {
         <Fragment>
             <div>
                 <SignUpWrapper />
-            </div>
-            <div>
-                <feedWrapper />
+            </Fragment>
+            <Fragment>
+                <FeedWrapper />
                 <ProfileWrapper />
                 <WidgetWrapper />
             </div>
