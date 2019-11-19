@@ -3,7 +3,7 @@ import './Profile.css';
 
 const Profile = props => {
     return (
-        <div class="profile">
+        <div className="profile">
             <div className="profileImage">
                 <img src={props.image} alt={props.name} />
             </div>
