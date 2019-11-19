@@ -50,7 +50,7 @@ const FeedWrapper = () => {
     }
 
     return (
-        <div className="feedWrapper">
+        <div className="FeedWrapper">
             {
                 feeds.map(feedObj => (
                     renderFeedBox(feedObj)
