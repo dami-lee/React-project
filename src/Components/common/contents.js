@@ -7,14 +7,14 @@ import SignUpWrapper from '../signup/signupWrapper';
 const Contents = () => {
     return (
         <Fragment>
-            <Fragment>
+            <div>
                 <SignUpWrapper />
-            </Fragment>
-            <Fragment>
+            </div>
+            <div>
                 <feedWrapper />
                 <ProfileWrapper />
                 <WidgetWrapper />
-            </Fragment>
+            </div>
         </Fragment>
     )
 }
