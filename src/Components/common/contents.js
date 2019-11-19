@@ -1,6 +1,6 @@
 import React from 'react';
 import FeedWrapper from '../feed/FeedWrapper';
-import ProfileWrapper from '../profile/profileWrapper';
+import ProfileWrapper from '../profile/ProfileWrapper';
 import WidgetWrapper from '../widget/widgetWrapper';
 import SignUpWrapper from '../signup/signupWrapper';
 

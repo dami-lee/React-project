@@ -1,0 +1,34 @@
+.profileWrapper {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  width: 220px;
+  text-align: center;
+}
+
+.profileWrapper .profileImage {
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: 1px solid #ececec;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.profileWrapper .profileImage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.profileWrapper .profileName {
+  font-size: 20px;
+}
+
+.profileWrapper .profileId {
+  color: #999;
+  font-size: 14px;
+  font-weight: bold;
+}
