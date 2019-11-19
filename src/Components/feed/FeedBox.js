@@ -5,7 +5,7 @@ import './FeedBox.css';
 
 const FeedBox = props => {
     return (
-        <div class="feedBox">
+        <div className="feedBox">
             {props.children}
 
             <div className={props.likeDone ? `like is-active` : `like`}>

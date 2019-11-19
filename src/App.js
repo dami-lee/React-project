@@ -3,6 +3,7 @@ import faker from 'faker';
 import FeedBox from './Components/FeedBox';
 import Profile from './Components/Profile';
 import Header from './Components/common/header';
+import Contents from './Components/common/contents';
 
 import './App.css';
 
@@ -64,13 +65,7 @@ class App extends React.Component {
     return (
       <Fragment>
         <Header />
-        <div className="feed">
-          {
-            feeds.map(feedObj =>
-              this.renderFeedBox(feedObj)
-            )
-          }
-        </div>
+        <Contents />
       </Fragment>
     );
   }
