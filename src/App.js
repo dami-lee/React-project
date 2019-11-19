@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import faker from 'faker';
 import FeedBox from './Components/FeedBox';
 import Profile from './Components/Profile';
+import Header from './Components/common/header';
 
 import './App.css';
 
@@ -51,7 +52,7 @@ class App extends React.Component {
         <Profile
           name={feedObj.name}
           image={feedObj.image}
-          time={feedObj.time}/>
+          time={feedObj.time} />
         {feedObj.content}
       </FeedBox>
     )
@@ -59,18 +60,18 @@ class App extends React.Component {
 
   render() {
     const { feeds } = this.state;
-    const {
-      renderFeedBox
-    } = this;
 
     return (
-      <div class="feed">
-        {
-          feeds.map(feedObj =>
-            renderFeedBox(feedObj)
-          )
-        }
-      </div>
+      <Fragment>
+        <Header />
+        <div className="feed">
+          {
+            feeds.map(feedObj =>
+              this.renderFeedBox(feedObj)
+            )
+          }
+        </div>
+      </Fragment>
     );
   }
 }
