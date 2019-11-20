@@ -1,34 +1,28 @@
 .profileWrapper {
-  position: fixed;
-  top: 55px;
-  left: 0;
-  width: 220px;
+  padding-top: 16px;
   text-align: center;
 }
 
 .profileWrapper .profileImage {
   overflow: hidden;
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  border: 1px solid #ececec;
   border-radius: 50%;
-  box-sizing: border-box;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .profileWrapper .profileImage img {
   display: block;
   width: 100%;
-  height: 100%;
 }
 
 .profileWrapper .profileName {
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 1.1em;
 }
 
 .profileWrapper .profileId {
+  margin-top: 5px;
   color: #999;
-  font-size: 14px;
+  font-size: 0.8em;
   font-weight: bold;
 }
