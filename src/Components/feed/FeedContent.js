@@ -1,27 +1,10 @@
 import React from 'react';
 import Skeleton from '@material-ui/lab/Skeleton';
-import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
-const FeedContent = ({ loading, classes, ...props }) => {
+const FeedContent = ({ loading, content }) => {
     return (
-        <>
-        {
-            loading ? (
-                <Skeleton
-                    varient="rect"
-                    className={classes.media}
-                />
-            ) : (
-                <CardMedia
-                    className={classes.media}
-                    image="http://placehold.it/600x400"
-                    title="Test Name"
-                />
-            )
-        }
-
         <CardContent>
             {
                 loading ? (
@@ -36,13 +19,12 @@ const FeedContent = ({ loading, classes, ...props }) => {
                         component="p"
                     >
                         {
-                            "My First Minister of"
+                            content
                         }
                     </Typography>
                 )
             }
         </CardContent>
-        </>
     )
 }
 

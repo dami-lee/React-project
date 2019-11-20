@@ -5,7 +5,7 @@ import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
-const FeedHeader = ({ loading, ...props }) => {
+const FeedHeader = ({ loading, feed }) => {
     return (
         <CardHeader
             avatar={
@@ -13,8 +13,8 @@ const FeedHeader = ({ loading, ...props }) => {
                     <Skeleton varient="circle" width={40} height={40} />
                 ) : (
                     <Avatar
-                        alt="Test Name"
-                        src="http://placehold.it/40x40"
+                        alt={feed.name}
+                        src={feed.image}
                     />
                 )
             }
@@ -26,10 +26,10 @@ const FeedHeader = ({ loading, ...props }) => {
                 )
             }
             title={
-                loading ? <Skeleton height={6} width="80%" /> : 'Test Name'
+                loading ? <Skeleton height={6} width="80%" /> : feed.name
             }
             subheader={
-                loading ? <Skeleton height={6} width="40%" /> : '5 hours ago'
+                loading ? <Skeleton height={6} width="40%" /> : feed.time
             }
         />
     )
