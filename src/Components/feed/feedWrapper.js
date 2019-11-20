@@ -4,6 +4,7 @@ import Card from '@material-ui/core/Card';
 import { makeStyles } from '@material-ui/core/styles';
 
 import FeedHeader from './FeedHeader';
+import FeedContent from './FeedContent';
 
 const useStyles = makeStyles(theme => ({
     card: {
@@ -22,6 +23,10 @@ const FeedWrapper = ({ loading = false }) => {
         <Card className={classes.card}>
             <FeedHeader
                 loading={loading}
+            />
+            <FeedContent
+                loading={loading}
+                classes={classes}
             />
         </Card>
     );
