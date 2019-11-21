@@ -109,6 +109,7 @@ const Contents = (props) => {
                                 <input
                                     value={password}
                                     onChange={updatePassword}
+                                    type="password"
                                 />
                             </div>
                             <button
@@ -146,6 +147,7 @@ const Contents = (props) => {
                                     <input
                                         value={signUpPassword}
                                         onChange={updateSignUpPassword}
+                                        type="password"
                                     />
                                 </div>
                                 <div className="signUpInput">
