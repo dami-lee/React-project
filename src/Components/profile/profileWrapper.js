@@ -3,7 +3,7 @@ import faker from 'faker';
 
 import '../../assets/stylesheets/profile/ProfileWrapper.css';
 
-const ProfileWrapper = () => {
+const ProfileWrapper = ({userName}) => {
     const userData = {
         name: 'User Name',
         image: faker.image.avatar(),
@@ -12,14 +12,14 @@ const ProfileWrapper = () => {
 
     return (
         <div className="profileWrapper">
-            <div class="profileImage">
+            <div className="profileImage">
                 <img src={userData.image} alt={userData.name} />
             </div>
-            <div class="profileName">
+            <div className="profileName">
                 {userData.name}
             </div>
-            <div class="profileId">
-                @{userData.userId}
+            <div classNAme="profileId">
+                @{userName}
             </div>
         </div>
     )

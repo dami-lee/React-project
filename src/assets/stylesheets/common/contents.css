@@ -1,4 +1,67 @@
+label {
+  margin-right: 10px
+}
+
+.header {
+  height: 55px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgb(69, 69, 221);
+}
+
+.title {
+  display: flex;
+  float: left;
+  margin: 10px;
+  color: white;
+}
+
+.search {
+  font-size: 17px;
+  height: 40px;
+  width: 40%;
+  margin: 5px;
+}
+
 .feed {
   display: flex;
   justify-content: center;
+}
+
+.logInWrapper {
+  display: flex;
+  float: right;
+  margin-right: 10px;
+  color: white;
+}
+
+.logInInputWrapper {
+  text-align:right;
+  margin-right: 10px;
+}
+
+.inputTagWrapper {
+  display: inline-block;
+  margin: 20px 10px;
+  color: white;
+}
+
+.signUpWrapper {
+  width: 100%;
+}
+
+.imageWrapper {
+  width: 30%;
+  float: left;
+}
+
+.signUp {
+  width: 40%;
+  float: left;
+  margin: 0 100px;
+  text-align: right;
+}
+
+.signUpInput {
+  margin: 10px;
 }
