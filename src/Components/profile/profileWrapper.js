@@ -18,7 +18,7 @@ const ProfileWrapper = ({userName}) => {
             <div className="profileName">
                 {userData.name}
             </div>
-            <div classNAme="profileId">
+            <div className="profileId">
                 @{userName}
             </div>
         </div>
